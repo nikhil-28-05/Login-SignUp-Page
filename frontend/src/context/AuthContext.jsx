@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect, useContext } from 'react';
 
 const AuthContext = createContext(null);
 
-const API_BASE = "https://login-signup-page-133w.onrender.com";
+const API_BASE = import.meta.env.VITE_API_BASE || "https://login-signup-page-133w.onrender.com/pages";
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
