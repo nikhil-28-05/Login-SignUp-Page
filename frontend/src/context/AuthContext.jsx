@@ -2,7 +2,7 @@ import React, { createContext, useState, useEffect, useContext } from 'react';
 
 const AuthContext = createContext(null);
 
-const API_BASE = "http://localhost:8888/pages";
+const API_BASE = "https://login-signup-page-133w.onrender.com";
 
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
